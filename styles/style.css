@@ -1,0 +1,650 @@
+/*
+VS Code blue:
+color: hsl(201, 89%, 54%);
+
+Fredrik blue
+color: hsl(224, 100%, 58%);
+
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Alegreya', serif;
+*/
+
+/*STANDARD---------------------------*/
+/*html scrool behavior didn't work. I had to insert it into the html-file*/
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-family: 'Alegreya', serif;
+	font-size:85px;
+	line-height: 125px;
+	max-width: 900px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3{
+	color: black;
+	font-family: 'Alegreya', serif;
+	font-size:45px;
+	line-height: 75px;
+	max-width: 900px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h4 {
+	color: hsl(201, 89%, 54%);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+	line-height: 55px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+h5{
+	color: #21a9f2;
+	font-family: 'Alegreya', serif;
+	font-size: 24px;
+	line-height: 55px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+p {
+	color: black;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 18px;
+	margin-bottom: 0;
+}
+
+
+/*STANDARD ENDS-----------------------*/
+
+ #navbar {
+  background-color: transparent; 
+  position: fixed;
+  top: 8px;
+  width: 100%; 
+  transition: top 0.3s;  
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  background-color: hsl(201, 89%, 54%);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  margin-right: 10%;
+  text-decoration: none;
+  font-family: 'Alegreya', serif;
+  border-radius: 5px;
+}
+
+#navbar a:hover {
+  color: hsl(0, 0%, 25%);
+}
+
+/*---------------------------------------
+HEADER END--------------------------------*/
+ 
+/*----------------------------------------
+LANDING -------------------------*/
+
+#landing-page {
+	/*Image imported from Unsplash. Didn't know how to import from folder (images)*/
+	background: hsl(0, 0%, 25%) url(https://images.unsplash.com/photo-1631477076114-9123f721b9dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	/*background-image: url(images/fakurian-design-_S-zZyQiOr8-unsplash.jpg);*/
+	background-size: cover;
+	background-attachment:fixed;
+    background-position: center;
+	width: 100%;
+	height: 100%;
+	min-height: 840px;
+	display: table;
+	position: relative;
+	text-align: center;
+}
+
+.landing-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+.landing-content .landing-title {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 20px;
+	line-height: 40px;
+
+	letter-spacing: 5px;
+	color: white;
+}
+.landing-content .landing-title span {
+	display: inline-block;
+}
+
+.landing-content .button-about {
+    border: 1px;
+	border-style: solid;
+    border-radius: 10px;
+	color: white;
+	border-color: hsl(201, 89%, 54%);
+	line-height: 100px;
+	font-family: 'Courier New', Courier, monospace;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-decoration: none;
+	padding-left: 14px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.landing-content .button-about:hover {
+	border-color: white;
+}
+
+.social {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 75px;
+	margin: 0;
+	
+}
+
+.social li {
+	display: inline-block;
+	margin: 20px;
+	padding: 0;
+	
+}
+
+.social li a:hover {
+opacity: 70%;
+}
+
+/*RESPONSIVE---------------------------
+--------------------------------------*/
+/*414px bredd för mobiler, 768px bredd för surfplattor och 1920px bredd för bärbara*/
+@media (max-width: 1920px) {
+
+	.landing-content h1 {
+		font-size: 85px;
+	}
+	.landing-content h4 {
+		font-size: 24px;
+	}
+	.landing-content span {
+		font-size: 18px;
+
+	}
+}
+
+@media (max-width: 495px) {
+
+	.landing-content h1 {
+		font-size: 65px;
+	}
+	.landing-content h4 {
+		font-size: 20px;
+	}
+	.landing-content span {
+		font-size: 14px;
+
+	}
+}
+
+/*------------------------------------------
+LANDING END -------------------------------------*/
+
+/*------------------------------------------
+ABOUT -------------------------------------*/
+
+#about {
+    background: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 50%;
+    margin: auto;
+}
+
+.about-intro{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.about-flex {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+}
+
+.about-me img{
+	display: inline-block;
+	width: 140px;
+	margin: auto;
+
+}
+
+.intro-text {
+	display: inline-block;
+	text-align: left;
+	margin: auto;
+	padding-left: 20px;
+}
+
+/*RESPONSIVE---------------------------
+--------------------------------------*/
+
+@media (max-width: 920px) {
+	.about-flex {
+		flex:none;
+		display: block;
+	}
+	.about-intro h3 {
+		line-height: 60px;
+	}
+}
+@media (max-width: 774px) {
+	.about-intro h3 {
+		font-size: 45px;
+	}
+}
+@media (max-width: 633px) {
+	.about-intro h3 {
+		line-height: 50px;
+		font-size: 40px;
+	}
+}
+
+/*---------------------------------------
+ABOUT END--------------------------------*/
+ 
+/*----------------------------------------
+PROFILE AND SKILLS-------------------------*/
+
+#profile-skills {
+	margin-right: 10px;
+	margin-bottom: 100px;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 48px;
+}
+
+.profile-skills-all {
+	display: flex;
+	flex-direction: column;
+	margin-top: 38px;
+}
+
+.profile-skills h5 {
+	color: hsl(201, 89%, 54%);
+	line-height: 20px;
+}
+
+.profile-skills li {
+	color: hsl(0, 0%, 25%);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 18px;
+	min-height: 40px;
+	list-style:none;
+	margin-bottom: 15px;
+}
+
+.profile-skills li strong {
+	display: block;
+	text-transform: uppercase;
+	line-height: 2;
+}
+
+.profile-skills li span {
+	display: block;
+	line-height: 0.5;
+}
+
+.profile-skills p {
+	max-width: 350px;
+}
+
+.profile-list {
+	display: inline-block;
+	height: 100%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	min-height: 40px;
+	text-align: left;
+
+}
+
+ .skills-list {
+	display: inline-block;
+	height: 100%;
+    padding-left: 20px;
+	padding-bottom: 20px;
+	min-height: 40px;
+	text-align: left;
+}
+
+ul {
+	padding-left: 0;
+}
+
+/*RESPONSIVE---------------------------
+--------------------------------------*/
+
+@media (min-width: 1440px) {
+	.profile-skills {
+		margin: auto;
+	}
+}	
+
+@media (max-width: 1440px) {
+	.profile-skills {
+		margin: auto;
+	}
+}
+
+@media (max-width: 774px) {
+	.profile-list {
+		margin-left: 200px;
+	}
+	.skills-list {
+		margin-left: 200px;
+	}
+}
+
+@media (max-width: 645px) {
+	.profile-list {
+		margin-left: 120px;
+	}
+	.skills-list {
+		margin-left: 120px;
+	}
+}
+
+@media (max-width: 510px) {
+	.profile-list {
+		margin-left: 80px;
+	}
+	.skills-list {
+		margin-left: 80px;
+	}
+}
+/*Mobile*/
+@media (max-width: 436px) {
+	.profile-list {
+		margin: auto;
+		padding: 10;
+	}
+	.skills-list {
+		margin: auto;
+		padding: 10;
+	}
+}
+/*---------------------------------------
+PROFILE-SKILLS END-----------------------*/
+/*----------------------------------------
+EXPERIENCE--------------------------------*/
+
+#experience {
+    background: url(https://images.unsplash.com/photo-1631477076114-9123f721b9dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	opacity: 97%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-size: cover;
+	background-attachment:fixed;
+    background-position: center;
+}
+
+.experience {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+.experience.intro {
+	margin-bottom: 20px;
+}
+.experience h3 {
+	color: white;
+}
+
+.experience p {
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 28px;
+	color: white;
+}
+
+.experience-work-list {
+	width: 100%;
+	font-size: 16px;
+}
+
+.experience-work-list h5 {
+	color:hsl(201, 89%, 54%);
+	padding: 0 50px;
+}
+
+.experience-work-list li {
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 18px;
+	min-height: 40px;
+	list-style:none;
+	margin-bottom: 15px;
+	padding: 0 50px;
+}
+.experience-work-list li span {
+	display: block;
+
+}
+
+.work-list h5 {
+	margin-top: 25px;
+}
+.education-list h5 {
+	margin-top: 25px;
+}
+.certificate-list h5 {
+	margin-top: 25px;
+}
+
+.education-list {
+	display: inline-block;
+	height: 100%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+ .work-list {
+	display: inline-block;
+	height: 100%;
+    padding-left: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+.certificate-list {
+	display: inline-block;
+	height: 100%;
+    padding-left: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+.education-list img {
+	height: 60px;
+	
+}
+
+.work-list img {
+	height: 50px;
+}
+
+.certificate-list img {
+	height: 50px;
+}
+
+.img-wrapper {
+	display: flex;
+	justify-content: center;	
+}
+
+/*RESPONSIVE---------------------------
+---------------------------------------*/
+@media (max-width: 636px) {
+	.experience h3 {
+		font-size: 40px;;
+	}
+	.work-list {
+		padding-left: 0;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+	.education-list {
+		padding-left: 0;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+	.certificate-list {
+		padding-left: 0;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+
+	.experience-work-list img {
+		padding-left: 0;
+	}
+	.experience-work-list h5 {
+		padding: 0;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 449px) {
+	.experience h3 {
+		line-height: 50px;
+	}
+}
+
+/*----------------------------------------
+EXPERIENCE END---------------------------*/
+/*----------------------------------------
+CONTACT----------------------------------*/
+
+#contact {
+    background: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+.contact-me {
+	display: block;
+	width: 100%;
+	bottom: 115px;
+	margin: 0;
+	padding: 0;
+}
+
+.contact-me li {
+	display: inline-block;
+	padding: 0 40px;
+}
+
+.contact-me p {
+	height: 0;
+	padding-bottom: 25px;
+}
+
+.contact-me img {
+	height: 180px;
+	width: 180px;
+}
+
+/*RESPONSIVE---------------------------
+--------------------------------------*/
+@media (max-width: 803px) {
+	.contact-me ul {
+		width: 50%;
+		margin:auto;
+	}
+	.contact h3 {
+		margin-bottom: 30px;
+	}
+	.contact-me img {
+		margin: 20px 0;
+
+	}
+}
+@media (max-width: 663px) {
+	.contact h3 {
+		font-size: 40px;
+	}
+	.contact-me p {
+		padding-bottom: 10px;
+	}
+}
+@media (max-width: 521px) {
+	.contact h3 {
+		font-size: 40px;
+	}
+	.contact-me p {
+		padding-bottom: 10px;
+	}
+	.contact-me li {
+	padding: 0 0;
+	}
+}
+/*----------------------------------------
+CONTACT END------------------------------*/
+
+/*----------------------------------------
+FOOTER-----------------------------------*/
+
+.footer-bottom {
+	background-color: hsl(0, 0%, 25%);
+	font-family: 'Courier New', Courier, monospace;
+	color: white;
+	text-align: center;
+	padding-top: 1%;
+}
+
+ @media (max-width: 451px) {
+	 .page-footer {
+		 font-size: 13px;
+	 }
+ }
+ @media (max-width: 395px) {
+	.page-footer {
+		font-size: 11px;
+	}
+}
+/*----------------------------------------
+FOOTER END--------------------------------*/
